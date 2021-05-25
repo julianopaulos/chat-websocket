@@ -11,6 +11,6 @@ final class Update{
         $this->chat = $chat;
         $this->conn = new Conn();
         $this->conn = $this->conn->getConn();
-        var_dump([$this->chat, $this->conn]);
+        //var_dump([$this->chat, $this->conn]);
     }
 }

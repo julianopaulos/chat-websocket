@@ -3,9 +3,11 @@ namespace MyApp\Classes;
 
 final class ChatMessages{
     private $chatRoomId;
-    private $userId;
+    private $fromUserId;
+    private $toUserId;
     private $userName;
     private $message;
+    private $act;
     
 
     /**
@@ -21,27 +23,9 @@ final class ChatMessages{
      *
      * @return  nothing
      */ 
-    public function setChatRoomId($chatRoomId)
+    public function setChatRoomId(int $chatRoomId)
     {
         $this->chatRoomId = $chatRoomId;
-    }
-
-    /**
-     * Get the value of userId
-     */ 
-    public function getUserId()
-    {
-        return $this->userId;
-    }
-
-    /**
-     * Set the value of userId
-     *
-     * @return  nothing
-     */ 
-    public function setUserId($userId)
-    {
-        $this->userId = $userId;
     }
 
     /**
@@ -57,7 +41,7 @@ final class ChatMessages{
      *
      * @return  nothing
      */ 
-    public function setUserName($userName)
+    public function setUserName(string $userName)
     {
         $this->userName = $userName;
     }
@@ -75,8 +59,62 @@ final class ChatMessages{
      *
      * @return  nothing
      */ 
-    public function setMessage($message)
+    public function setMessage(string $message)
     {
         $this->message = $message;
+    }
+
+    /**
+     * Get the value of act
+     */ 
+    public function getAct()
+    {
+        return $this->act;
+    }
+
+    /**
+     * Set the value of act
+     *
+     * @return  nothing
+     */ 
+    public function setAct(string $act)
+    {
+        $this->act = $act;
+    }
+
+    /**
+     * Get the value of fromUserId
+     */ 
+    public function getFromUserId()
+    {
+        return $this->fromUserId;
+    }
+
+    /**
+     * Set the value of fromUserId
+     *
+     * @return  nothing
+     */ 
+    public function setFromUserId(int $fromUserId)
+    {
+        $this->fromUserId = $fromUserId;
+    }
+
+    /**
+     * Get the value of toUserId
+     */ 
+    public function getToUserId()
+    {
+        return $this->toUserId;
+    }
+
+    /**
+     * Set the value of toUserId
+     *
+     * @return  nothing
+     */ 
+    public function setToUserId(int $toUserId)
+    {
+        $this->toUserId = $toUserId;
     }
 }
