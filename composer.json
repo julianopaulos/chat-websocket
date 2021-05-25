@@ -1,0 +1,24 @@
+{
+    "name": "juliano/websocket_chat",
+    "description": "chat em php com websocket e pdo",
+    "require": {
+        "cboden/ratchet": "^0.4.3"
+    },
+    "authors": [
+        {
+            "name": "Juliano",
+            "email": "julianopaulo.santos@hotmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "MyApp\\": "Src",
+            "Core\\": "Core"
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "7.3.21"
+        }
+    }
+}
